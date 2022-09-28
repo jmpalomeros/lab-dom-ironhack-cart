@@ -1,6 +1,10 @@
 // ITERATION 1
 
-//const { product } = require("puppeteer");
+
+
+
+
+//const { product } = require("puppeteer"); ESTO NO SE PQ APARECE
 
 
 
@@ -45,9 +49,14 @@ con un innerText que sume los dos subtotales.
 El problema es que no soy capaz de sumar los dos subtotales correctamente*/
 
 
+
 let totalValue = document.querySelector("#total-value span")
 
-let sumSubtotal = 
+let sumSubototal = updateSubtotal(product) + updateSubtotal(product)
+
+totalValue.innerText = sumSubototal
+
+
 
 
 
@@ -77,7 +86,6 @@ totalDOM.innerText = updateSubtotal()*/
 
     return sumTotalItelms*/
     
-  
 }
 
 // ITERATION 4
